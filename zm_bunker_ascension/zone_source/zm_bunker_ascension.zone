@@ -1,0 +1,16 @@
+>class,zm_mod_level
+>group,modtools
+
+xmodel,skybox_default_day
+material,luts_t7_default
+	
+// BSP
+col_map,maps/zm/zm_bunker_ascension.d3dbsp
+gfx_map,maps/zm/zm_bunker_ascension.d3dbsp
+
+// Audio
+sound,zm_bunker_ascension
+
+scriptparsetree,scripts/zm/zm_bunker_ascension.gsc
+scriptparsetree,scripts/zm/zm_bunker_ascension.csc
+scriptparsetree,scripts/zm/zm_usermap.gsc
