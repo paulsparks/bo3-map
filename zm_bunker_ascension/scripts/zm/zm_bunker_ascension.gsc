@@ -58,6 +58,8 @@
 
 function main()
 {
+	level thread new_zombie_speed();
+
 	zm_usermap::main();
 	
 	level._zombie_custom_add_weapons =&custom_add_weapons;
@@ -82,3 +84,10 @@ function custom_add_weapons()
 	zm_weapons::load_weapon_spec_from_table("gamedata/weapons/zm/zm_levelcommon_weapons.csv", 1);
 }
 
+function new_zombie_speed()
+{
+	level flag::wait_till( "initial_blackscreen_passed" ); 
+	zombie_utility::set_zombie_var( "zombie_move_speed_multiplier", 	  75,	false );	//	Multiply by the round number to give the base speed value.  0-40 = walk, 41-70 = run, 71+ = sprint
+	zombie_utility::set_zombie_var( "zombie_move_speed_multiplier_easy",  75,	false );	//	Multiply by the round number to give the base speed value.  0-40 = walk, 41-70 = run, 71+ = sprint
+	level.zombie_move_speed			= level.round_number * level.zombie_vars["zombie_move_speed_multiplier"]; 
+}
