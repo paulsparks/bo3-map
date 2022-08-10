@@ -1,0 +1,30 @@
+iwmap 4
+// entity 0
+{
+guid "{05A3C0F7-1868-11ED-87E2-D43B04C678F6}"
+"classname" "worldspawn"
+}
+// entity 1
+// entity 2
+// entity 3
+// entity 4
+// entity 5
+// entity 6
+// entity 7
+{
+guid "{E8FEE255-1866-11ED-87E2-D43B04C678F6}"
+"classname" "script_struct"
+"model" "p7_zm_vending_widows_wine"
+"origin" "136 320 0"
+"script_noteworthy" "specialty_widowswine"
+"target" "auto1"
+"targetname" "zm_perk_machine"
+}
+// entity 8
+// entity 9
+// entity 10
+// entity 11
+// entity 12
+// entity 13
+// entity 14
+// entity 15
